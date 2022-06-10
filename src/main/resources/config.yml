@@ -1,0 +1,21 @@
+# Minecraft color code to change the color of death messages
+# 0 - black
+# 1 - dark blue
+# 2 - dark green
+# 3 - dark aqua
+# 4 - dark red
+# 5 - dark purple
+# 6 - gold
+# 7 - gray
+# 8 - dark gray
+# 9 - blue
+# a - green
+# b - aqua
+# c - red
+# d - light purple
+# e - yellow
+# f - white
+color-code: f
+
+# When enabled, will use a player's display name instead of username in death messages
+use-display-name: true

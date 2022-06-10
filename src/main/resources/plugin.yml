@@ -1,0 +1,16 @@
+name: ColorDeathMessages
+version: 1.0
+main: dev.neodymium.colordeathmessages.ColorDeathMessages
+api-version: 1.18
+author: Neodymium
+description: Simple plugin to change the color of Minecraft's default death messages and replace usernames with display names like Essentials nicknames
+permissions:
+  colordeathmessages.commands:
+    description: Allows usage of the /colordeathmessages command to configure ColorDeathMessages
+    default: op
+commands:
+  colordeathmessages:
+    description: Commands to configure ColorDeathMessages
+    usage: /colordeathmessages reload | color | displayname
+    aliases: cdm
+    permission: colordeathmessages.commands
