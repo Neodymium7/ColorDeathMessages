@@ -23,6 +23,7 @@ public class CommandColorDeathMessages implements CommandExecutor {
             if (args[0].equalsIgnoreCase("reload")) {
                 plugin.reloadConfig();
                 sender.sendMessage(ChatColor.GRAY + "Reloaded ColorDeathMessages");
+                return true;
             }
             if (args[0].equalsIgnoreCase("color")) {
                 String[] colors = {"black", "dark_blue", "dark_green", "dark_aqua", "dark_red", "dark_purple", "gold", "gray", "dark_gray", "blue", "green", "aqua", "red", "light_purple", "yellow", "white"};
@@ -48,6 +49,7 @@ public class CommandColorDeathMessages implements CommandExecutor {
                 else  {
                     sender.sendMessage(ChatColor.GRAY + "You must provide a valid color name or color code");
                 }
+                return true;
             }
             if (args[0].equalsIgnoreCase("displayname")) {
                 if (args.length > 1 && (args[1].equalsIgnoreCase("true") || args[1].equalsIgnoreCase("false"))) {
@@ -59,8 +61,8 @@ public class CommandColorDeathMessages implements CommandExecutor {
                 else {
                     sender.sendMessage(ChatColor.GRAY + "Provided value must be 'true' or 'false'");
                 }
+                return true;
             }
-            return true;
         }
         return false;
     }
