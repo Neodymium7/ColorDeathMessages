@@ -22,9 +22,9 @@ public class TabCompleter implements org.bukkit.command.TabCompleter {
             return completions;
         }
         if (args.length == 2 && args[0].equalsIgnoreCase("color")) {
-            String[] codes = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f"};
+            String[] colors = {"black", "dark_blue", "dark_green", "dark_aqua", "dark_red", "dark_purple", "gold", "gray", "dark_gray", "blue", "green", "aqua", "red", "light_purple", "yellow", "white"};
             List<String> completions = new ArrayList<>();
-            Collections.addAll(completions, codes);
+            Collections.addAll(completions, colors);
             return completions;
         }
         if (args.length == 2 && args[0].equalsIgnoreCase("displayname")) {
